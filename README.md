@@ -1,5 +1,5 @@
 # Movies-ETL
-ETL with movies from Wikipedia and Kaggle
+Creating an automated pipeline with movie data, using Python, Pandas, Jupyter Notebook, and PostgreSQL.
 
 ## Overview
 In this project a function was created to automate the ETL process for our data. after the data has been extracted and transformed, it will be imported into a PostgreSQL database. 
@@ -7,8 +7,8 @@ The data consists of:
 
 - A webscrape (JSON) of wikipedia data of movies from 1990 to 2018 from the sidebar.
 - Two .csv files from [kaggle.com](https://www.kaggle.com/).
-    1. A metadata file from [https://www.themoviedb.org/](https://www.themoviedb.org/).
-    2. A movie rating file from [https://movielens.org/](https://movielens.org/)
+    - A metadata file from [https://www.themoviedb.org/](https://www.themoviedb.org/).
+    - A movie rating file from [https://movielens.org/](https://movielens.org/)
 
 ## Results
 Once the function was successfully called I checked PgAdmin to verify the tables were imported correctly
@@ -228,3 +228,6 @@ def extract_transform_load(wiki_file, kaggle_file, ratings_file):
 ```
 </p>
 </details>
+
+![movie query](/Resources/movies_query.PNG)
+![ratings query](/Resources/ratings_query.PNG)
