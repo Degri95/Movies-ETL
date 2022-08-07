@@ -8,7 +8,7 @@ The data consists of:
 - A webscrape (JSON) of wikipedia data of movies from 1990 to 2018 from the sidebar.
 - Two .csv files from [kaggle.com](https://www.kaggle.com/).
     - A metadata file from [https://www.themoviedb.org/](https://www.themoviedb.org/).
-    - A movie rating file from [https://movielens.org/](https://movielens.org/)
+    - A movie rating file from [https://movielens.org/](https://movielens.org/).
 
 <details><summary>Code for ETL</summary>
 <p>
