@@ -11,9 +11,11 @@ The data consists of:
     2. A movie rating file from [https://movielens.org/](https://movielens.org/)
 
 ## Results
-Once the function was successfully called I checked PgAdming to verify the tables were imported correctly
+Once the function was successfully called I checked PgAdmin to verify the tables were imported correctly
+<details><summary>Code</summary>
+<p>
 
-'''python
+```python
 def extract_transform_load(wiki_file, kaggle_file, ratings_file):
     # Read in the kaggle metadata and MovieLens ratings CSV files as Pandas DataFrames.
     kaggle_metadata = pd.read_csv(f'{kaggle_file}', low_memory=False)
@@ -224,3 +226,5 @@ def extract_transform_load(wiki_file, kaggle_file, ratings_file):
         # add the elapsed time to the final print out
         print(f'Done. {time.time() - start_time} total seconds elapsed')
 ```
+</p>
+</details>
