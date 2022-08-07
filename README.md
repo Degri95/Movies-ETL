@@ -2,7 +2,7 @@
 Creating an automated pipeline with movie data, using Python, Pandas, Jupyter Notebook, and PostgreSQL.
 
 ## Overview
-In this project a function was created to automate the ETL process for our data. after the data has been extracted and transformed, it's imported into a PostgreSQL database. 
+In this project a function was created to automate the ETL process for movie data from Wikipedia and Kaggle. after the data has been extracted and transformed, it's imported into a PostgreSQL database. 
 The data consists of:
 
 - A webscrape (JSON) of wikipedia data of movies from 1990 to 2018 from the sidebar.
@@ -227,9 +227,7 @@ def extract_transform_load(wiki_file, kaggle_file, ratings_file):
 </p>
 </details>
 
-## Results
-Once the function was called, PgAdmin was checked to verify our data had been imported correctly. 
+Once the function was written and called, PgAdmin was checked to verify our data had been imported correctly. 
 
 ![movie query](/Resources/movies_query.PNG)![ratings query](/Resources/ratings_query.PNG)
 
-The data was successfully imported! the ETL function had successfully performed it's purpose. 
